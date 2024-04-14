@@ -193,7 +193,7 @@ It initializes things related to CPU governor scaling, which we currently can't 
 
 - Copies our custom audio config and profiles to the target system image:
 
-```
+```diff
  ifeq ($(PLATFORM_IS_AFTER_KITKAT),1)
  ifeq ($(NV_ANDROID_FRAMEWORK_ENHANCEMENTS),TRUE)
  PRODUCT_COPY_FILES += \

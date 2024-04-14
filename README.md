@@ -3,7 +3,7 @@ Welcome! This repository aims to show how to build and flash Android 5.1 on a Mi
 
 ## Status
 Currently, everything works except:
-    - Bluetooth
-    - Camera
-    - Wi-Fi (*extremely* unreliable; hit or miss)
-    - Power management
+- Bluetooth
+- Camera
+- Wi-Fi (*extremely* unreliable; hit or miss)
+- Power management
