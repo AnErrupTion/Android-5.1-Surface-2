@@ -208,3 +208,8 @@ Fortunately, integrating APKs at the system level is quite easy. Indeed, just mo
 ```
 
 Then, upon booting Android, it'll automatically install the APK. However, beware that some apps don't like being installed as a system APK, and will refuse to launch (like Termux for example). In this case, you can install a file manager like [this one](https://f-droid.org/packages/com.github.axet.filemanager) at the system level, and sideload from there.
+
+## Optional: Rooting the device
+In order for Termux to be even remotely useful for debugging, you'll want to root the device. Fortunately, SuperSU is present in the recovery ramdisk of the USB flash drive, so it can be done easily.
+
+All you have to do is boot into the recovery using the boot selection menu, swipe to allow modifications in TWRP, then tap "Install", tap "(Up A Level)" at the very top, then tap "BETA-SuperSU-v2.62-3-20151211162651.zip". Then, swipe to confirm flash, and reboot.

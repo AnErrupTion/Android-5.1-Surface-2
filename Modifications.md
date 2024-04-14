@@ -236,7 +236,7 @@ It initializes things related to CPU governor scaling, which we currently can't 
  
 +# Copy Wi-Fi firmware blob and audio mixer settings for Surface 2
 +PRODUCT_COPY_FILES += \
-+	device/nvidia/tegratab/wifi/firmware/sd8797_uapsta.bin:system/vendor/firmware/mrvl/sd8797_upasta.bin \
++	device/nvidia/tegratab/wifi/firmware/sd8797_uapsta.bin:system/vendor/firmware/mrvl/sd8797_uapsta.bin \
 +        device/nvidia/tegratab/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 +
  #enable Widevine drm

@@ -8,5 +8,4 @@ A pre-built SD card image, as well as files for the USB flash drive, are availab
 Currently, everything works except:
 - Bluetooth
 - Camera
-- Wi-Fi (*extremely* unreliable; hit or miss)
 - Power management
