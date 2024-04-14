@@ -1,6 +1,8 @@
 # Modifications done in the Android source code
 This document explains all modifications made in the `device/nvidia` folder (and in rare cases, outside of it), done to make Android work on the Microsoft Surface 2.
 
+**Note: Android is a very complex OS, and the Microsoft Surface 2 is a very complex device (reinforced by its also very complex Tegra 4 SoC). This means that some files may lack concrete explanation of what some things are (like QSV and the LBH)**
+
 ## build/target/product
 
 ### generic_no_telephony_no_bluetooth.mk
@@ -315,7 +317,7 @@ It initializes things related to CPU governor scaling, which we currently can't 
      write /sys/devices/system/cpu/cpuquiet/tegra_cpuquiet/no_lp 0
 ```
 
-**Note: This is not the file that actually performs the rotation on boot. For that, see the `system.prop` file below.**
+**Note 2: This is not the file that actually performs the rotation on boot. For that, see the `system.prop` file below.**
 
 ### init.tegratab.rc
 - Removes `mount` commands from partitions that don't exist on the Microsoft Surface 2:
